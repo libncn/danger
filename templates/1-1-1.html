@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>外港堆存</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/layuimini/lib/layui-v2.6.3/css/layui.css" media="all">
+    <link rel="stylesheet" href="/static/layuimini/lib/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="/static/layuimini/css/public.css" media="all">
+    <style>
+        .layui-card {
+            border: 1px solid #f2f2f2;
+            border-radius: 5px;
+        }
+
+        .card-head {
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .head_total {
+            color: black;
+            background-color: lightgray;
+        }
+
+        .head_port {
+            color: black;
+            background-color: whitesmoke;
+        }
+
+        .card-number {
+            line-height: 60px;
+            font-size: 32px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .num_total1 {
+            font-size: 32px;
+            color: red;
+        }
+
+        .num_total2 {
+            font-size: 32px;
+            color: darkblue;
+        }
+
+        .num_port {
+            font-size: 24px;
+        }
+
+        .icon_port {
+            color: green;
+        }
+
+        .icon_total {
+            color: #2C3E50;
+        }
+
+        .update-tips {
+            line-height: 30px;
+            font-size: 12px;
+            text-align: left;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+<div class="layuimini-container">
+    <div class="layuimini-main">
+        <div class="layui-row layui-col-space15">
+            <blockquote class="layui-elem-quote" style="font-size:20px;font-weight:bold;">外高桥港区危险货物堆存监控</blockquote>
+            <br>
+            <div class="layui-col-md4">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                    <legend>外港堆存汇总</legend>
+                </fieldset>
+                <div class="layui-col-md6">
+                    <div class="layui-card top-panel">
+                        <div class="layui-card-header card-head head_total"><i class="fa fa-truck icon_total"></i>&emsp;总箱量
+                        </div>
+                        <div class="layui-card-body">
+                            <div class="layui-row layui-col-space5 card-number  num_total1">
+                                324
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md6">
+                    <div class="layui-card top-panel">
+                        <div class="layui-card-header card-head head_total"><i class="fa fa-file-text icon_total"></i>&emsp;总单量
+                        </div>
+                        <div class="layui-card-body">
+                            <div class="layui-row layui-col-space5 card-number num_total2">
+                                265
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-col-md8">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                    <legend>码头堆存汇总</legend>
+                </fieldset>
+                <div class="layui-col-md3">
+                    <div class="layui-card top-panel">
+                        <div class="layui-card-header card-head head_port"><i class="fa fa-anchor icon_port"></i>&emsp;&emsp;外一箱量〔浦东国际〕
+                        </div>
+                        <div class="layui-card-body">
+                            <div class="layui-row layui-col-space5 card-number num_port">
+                                <div class="layui-col-md6">
+                                    63
+                                </div>
+                                <div class="layui-col-md6 update-tips">
+                                    <div>数据更新时间：</div>
+                                    <div>2021-07-05 09:12:18</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md3">
+                    <div class="layui-card top-panel">
+                        <div class="layui-card-header card-head head_port"><i class="fa fa-anchor icon_port"></i>&emsp;&emsp;
+                            外二箱量〔振东〕
+                        </div>
+                        <div class="layui-card-body">
+                            <div class="layui-row layui-col-space5 card-number num_port">
+                                <div class="layui-col-md6">
+                                    155
+                                </div>
+                                <div class="layui-col-md6 update-tips">
+                                    <div>数据更新时间：</div>
+                                    <div>2021-07-05 09:58:49</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md3">
+                    <div class="layui-card top-panel">
+                        <div class="layui-card-header card-head head_port"><i class="fa fa-anchor icon_port"></i>&emsp;&emsp;
+                            外四箱量〔沪东〕
+                        </div>
+                        <div class="layui-card-body">
+                            <div class="layui-row layui-col-space5 card-number num_port">
+                                <div class="layui-col-md6">
+                                    42
+                                </div>
+                                <div class="layui-col-md6 update-tips">
+                                    <div>数据更新时间：</div>
+                                    <div>2021-07-05 09:52:19</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md3">
+                    <div class="layui-card top-panel">
+                        <div class="layui-card-header card-head head_port"><i class="fa fa-anchor icon_port"></i>&emsp;&emsp;外五箱量〔明东〕
+                        </div>
+                        <div class="layui-card-body">
+                            <div class="layui-row layui-col-space5 card-number num_port">
+                                <div class="layui-col-md6">
+                                    64
+                                </div>
+                                <div class="layui-col-md6 update-tips">
+                                    <div>数据更新时间：</div>
+                                    <div>2021-07-05 09:43:41</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                    <legend>码头堆存分类</legend>
+                </fieldset>
+            </div>
+            <div class="layui-col-md12">
+                <div id="table1" style="width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/layuimini/lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+<script src="/static/layuimini/js/lay-config.js?v=1.0.4" charset="utf-8"></script>
+
+<script>
+    layui.use(['jquery', 'table', 'layer'], function () {
+        var $ = layui.jquery,
+            table = layui.table,
+            layer = layui.layer;
+
+
+        // 渲染表格
+        table.render({
+            elem: '#table1',
+            url: '/static/data/dglist.json',
+            cols: [[
+                {
+                    field: '危类箱量',
+                    title: '危类箱量',
+                    totalRowText: '合计箱量'
+                },
+                {
+                    field: '1',
+                    title: '1类',
+                    totalRow: true,
+                    align: 'center'
+                },
+                {
+                    field: '2',
+                    title: '2类',
+                    totalRow: true,
+                    align: 'center'
+                },
+                {
+                    field: '3',
+                    title: '3类',
+                    totalRow: true,
+                    align: 'center'
+                },
+                {
+                    field: '4',
+                    title: '4类',
+                    totalRow: true,
+                    align: 'center'
+                },
+                {
+                    field: '5',
+                    title: '5类',
+                    totalRow: true,
+                    align: 'center'
+                },
+                {
+                    field: '6',
+                    title: '6类',
+                    totalRow: true,
+                    align: 'center'
+                },
+                {
+                    field: '7',
+                    title: '7类',
+                    totalRow: true,
+                    align: 'center'
+                },
+                {
+                    field: '8',
+                    title: '8类',
+                    totalRow: true,
+                    align: 'center'
+                },
+                {
+                    field: '9',
+                    title: '9类',
+                    totalRow: true,
+                    align: 'center'
+                }
+            ]],
+            cellMinWidth: 100,
+            toolbar: true,
+            totalRow: true,
+            even: true,
+            title: '危化品堆存分类统计表',
+            done: function (res, curr, count) {
+                //设置行首颜色
+                $('th').css({'background-color': '#6495ed', 'color': 'white'});//设置th颜色
+                //设置行末颜色
+                $('.layui-table-total table td').css({'background-color': '#b0c4de'});
+            }
+        });
+
+
+        return false;
+    });
+</script>
+
+</body>
+
+</html>
