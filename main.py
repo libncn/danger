@@ -60,6 +60,10 @@ def page(name):
     elif name == '1-1-1':
         return flask.render_template('1-1-1.html')
 
+    # 数据上传
+    elif name == '4-4-1':
+        return flask.render_template('4-4-1.html')
+
     else:
         return flask.render_template('404.html')
 

@@ -24,7 +24,7 @@
 
         .head_total {
             color: black;
-            background-color: lightgray;
+            background-color: whitesmoke;
         }
 
         .head_port {
@@ -58,7 +58,8 @@
         }
 
         .icon_total {
-            color: #2C3E50;
+            {#color: #2C3E50;#}
+            color: darkcyan;
         }
 
         .update-tips {
@@ -211,8 +212,8 @@
             url: '/static/data/dglist.json',
             cols: [[
                 {
-                    field: '危类箱量',
-                    title: '危类箱量',
+                    field: '码头名称',
+                    title: '码头名称',
                     totalRowText: '合计箱量'
                 },
                 {
@@ -277,9 +278,9 @@
             title: '危化品堆存分类统计表',
             done: function (res, curr, count) {
                 //设置行首颜色
-                $('th').css({'background-color': '#6495ed', 'color': 'white'});//设置th颜色
+                $('th').css({'background-color': '#6495ed', 'color': 'white', 'font_weight':'bold'});//设置th颜色
                 //设置行末颜色
-                $('.layui-table-total table td').css({'background-color': '#b0c4de'});
+                $('.layui-table-total table td').css({'background-color': '#b0c4de','color':'black'});
             }
         });
 

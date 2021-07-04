@@ -161,7 +161,7 @@
           "child": [
             {
               "title": "数据上传",
-              "href": "",
+              "href": "page/4-4-1",
               "icon": "fa fa-cloud-upload",
               "target": "_self"
             },
@@ -183,7 +183,7 @@
     },
     {
       "title": "数据上传（临时）",
-      "href": "",
+      "href": "page/4-4-1",
       "icon": "fa fa-cloud-upload",
       "target": "_self"
     },
