@@ -18,7 +18,7 @@
 
         .card-head {
             line-height: 40px;
-            font-size: 16px;
+            font-size: 12px;
             text-align: center;
         }
 
@@ -34,7 +34,6 @@
 
         .card-number {
             line-height: 60px;
-            font-size: 32px;
             font-weight: bolder;
             text-align: center;
         }
@@ -58,8 +57,7 @@
         }
 
         .icon_total {
-            {#color: #2C3E50;#}
-            color: darkcyan;
+        {#color: #2C3E50;#} color: darkcyan;
         }
 
         .update-tips {
@@ -76,7 +74,6 @@
     <div class="layuimini-main">
         <div class="layui-row layui-col-space15">
             <blockquote class="layui-elem-quote" style="font-size:20px;font-weight:bold;">外高桥港区危险货物堆存监控</blockquote>
-            <br>
             <div class="layui-col-md4">
                 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
                     <legend>外港堆存汇总</legend>
@@ -120,7 +117,7 @@
                                 </div>
                                 <div class="layui-col-md6 update-tips">
                                     <div>数据更新时间：</div>
-                                    <div>2021-07-05 09:12:18</div>
+                                    <div>2021-07-05</div>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +135,7 @@
                                 </div>
                                 <div class="layui-col-md6 update-tips">
                                     <div>数据更新时间：</div>
-                                    <div>2021-07-05 09:58:49</div>
+                                    <div>2021-07-05</div>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +153,7 @@
                                 </div>
                                 <div class="layui-col-md6 update-tips">
                                     <div>数据更新时间：</div>
-                                    <div>2021-07-05 09:52:19</div>
+                                    <div>2021-07-05</div>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +170,7 @@
                                 </div>
                                 <div class="layui-col-md6 update-tips">
                                     <div>数据更新时间：</div>
-                                    <div>2021-07-05 09:43:41</div>
+                                    <div>2021-07-05</div>
                                 </div>
                             </div>
                         </div>
@@ -181,15 +178,7 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
         <div class="layui-row layui-col-space15">
-            <div class="layui-col-md12">
-                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-                    <legend>码头堆存分类</legend>
-                </fieldset>
-            </div>
             <div class="layui-col-md12">
                 <div id="table1" style="width: 100%;"></div>
             </div>
@@ -278,9 +267,9 @@
             title: '危化品堆存分类统计表',
             done: function (res, curr, count) {
                 //设置行首颜色
-                $('th').css({'background-color': '#6495ed', 'color': 'white', 'font_weight':'bold'});//设置th颜色
+                $('th').css({'background-color': '#6495ed', 'color': 'white', 'font_weight': 'bold'});//设置th颜色
                 //设置行末颜色
-                $('.layui-table-total table td').css({'background-color': '#b0c4de','color':'black'});
+                $('.layui-table-total table td').css({'background-color': '#b0c4de', 'color': 'black'});
             }
         });
 
